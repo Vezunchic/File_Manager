@@ -49,7 +49,7 @@
    Основаны на методе DeletDirectory удаляет каталог со всеми подкаталогами и файлами.
  ![2022-03-20_15-59-05](https://user-images.githubusercontent.com/97848897/159163440-75518872-6d49-4516-91ff-7bef063a6bce.png)
 
-    Основаны на методе DeletFile удаляет файл.
+   Основаны на методе DeletFile удаляет файл.
  ![2022-03-20_16-00-17](https://user-images.githubusercontent.com/97848897/159166157-066ad7f8-a278-4a24-beb3-655cd481fa83.png)
 
   
