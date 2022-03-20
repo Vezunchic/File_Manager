@@ -142,7 +142,7 @@ namespace File_Manager
             {
                 string[] treeDirectory = Directory.GetDirectories(pathToFindToDirectoria); //получает каталоги из текущего каталога
                 string[] fileTree = Directory.GetFiles(pathToFindToDirectoria);//получает файлы из текущего каталога
-
+                Console.WriteLine("Каталоги:");
                 for (int i = skippingFiles; i < filesShow; i++) // вывод каталогов
                 {
                     if (treeDirectory.Length <= i)
@@ -154,6 +154,7 @@ namespace File_Manager
                     }
                     Console.WriteLine($"{treeDirectory[i]}");
                 }
+                Console.WriteLine("\nФайлы:");
                 for (int j = skippingFiles; j < filesShow; j++) // вывод файлов
                 {
                     if (fileTree.Length <= j)
