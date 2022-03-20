@@ -140,8 +140,8 @@ namespace File_Manager
             int filesShow = outputSize * page + outputSize;
             try
             {
-                string[] treeDirectory = Directory.GetDirectories(pathToFindToDirectoria);
-                string[] fileTree = Directory.GetFiles(pathToFindToDirectoria);
+                string[] treeDirectory = Directory.GetDirectories(pathToFindToDirectoria); //получает каталоги из текущего каталога
+                string[] fileTree = Directory.GetFiles(pathToFindToDirectoria);//получает файлы из текущего каталога
 
                 for (int i = skippingFiles; i < filesShow; i++) // вывод каталогов
                 {

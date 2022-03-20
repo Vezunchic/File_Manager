@@ -8,7 +8,7 @@ namespace File_Manager
 {
     public class Settings
     {
-        public string PathGurenDirectory { get; set; } = "";
+        public string PathGurenDirectory { get; set; } = "C:\\";
         public int NumberElementsPage { get; set; } = 4;
     }
 }
