@@ -37,9 +37,9 @@
 ### Пункт 2.
    **Поддержка копирование файлов, каталогов.**
  
-  Основаны на методе CopyDirectory копирует каталог со всеми подкаталогами и файлами.
+   Основаны на методе CopyDirectory копирует каталог со всеми подкаталогами и файлами.
 ![2022-03-20_15-54-17](https://user-images.githubusercontent.com/97848897/159163294-77c40cdf-ed37-40bd-bfd1-a1d859439593.png)
- CopyFile копирует файл
+   CopyFile копирует файл.
 ![2022-03-20_15-55-18](https://user-images.githubusercontent.com/97848897/159163327-1df4bd2e-515c-490d-bbb0-25dedf50f8e8.png)
    
  ### Пункт 3.
@@ -49,7 +49,8 @@
  ![2022-03-20_15-59-05](https://user-images.githubusercontent.com/97848897/159163440-75518872-6d49-4516-91ff-7bef063a6bce.png)
 
     Основаны на методе DeletFile удаляет файл.
-    ![2022-03-20_16-00-17](https://user-images.githubusercontent.com/97848897/159163506-7e6cd8aa-7bbf-4d9f-aed1-f06de9eb6513.png)
+ ![2022-03-20_16-00-17](https://user-images.githubusercontent.com/97848897/159166157-066ad7f8-a278-4a24-beb3-655cd481fa83.png)
+
   
   ### Пункт 4.
    **Получение информации о размерах, системных атрибутов файла, каталога.**
