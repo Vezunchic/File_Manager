@@ -55,7 +55,7 @@ namespace File_Manager
             Console.WriteLine("Не верно введен адрес файла!");
         }
 
-        private static FileAttributes RemoveAttribute(FileAttributes attributes, FileAttributes attributesToRemove)
+        private static FileAttributes RemoveAttribute(FileAttributes attributes, FileAttributes attributesToRemove) 
         {
             return attributes & ~attributesToRemove;
         }

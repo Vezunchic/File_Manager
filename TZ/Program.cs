@@ -24,10 +24,24 @@ namespace File_Manager
                         {
                             Console.WriteLine($" help или h - помощь; \n del или d - удаление файла или каталога; \n copy или c - копирование файла или каталога;" +
                                 $" \n info или i - информация о файле или каталоге; \n exit или ex - завершить программу; \n return или re - возврат к текущей рабочему каталогу;" +
-                                $"\n search или s - поиск каталога или файла;\n enter или e - переход по заданному пути;\n rename или r - переименование файла или каталога; \n Atributtes или A - изменение атрибутов файла");
+                                $"\n search или s - поиск каталога или файла;\n enter или e - переход по заданному пути;\n rename или r - переименование файла или каталога; " +
+                                $"\n Atributtes или A - изменение атрибутов файла;\n creature или cr - создание файла или каталога");
                             Console.WriteLine();
                         }
                         continue;
+                    case "cr":
+                    case "creature":
+                        {
+                            Console.WriteLine("В каком каталоге хотите создать файл или каталог?");
+                            string nameFile = @$"{Console.ReadLine()}";
+
+                            ExecutionCommand.Сreature(nameFile);
+
+                            Console.WriteLine("\n -----------------------");
+
+                        }
+                        continue;
+                        
                     case "a":
                     case "atributtes":
                         {

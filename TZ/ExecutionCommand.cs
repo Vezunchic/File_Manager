@@ -6,7 +6,88 @@ namespace File_Manager
 {
     public class ExecutionCommand
     {
-       
+        public static void Сreature(string name) //Создание файла или каталога
+        {
+            if (Directory.Exists(name))// Проверяет если каталог в заданном пути
+            {
+                Console.WriteLine("Что хотите создать: k - катало или f - файл ");
+                string nameCurrentFile = @$"{Console.ReadLine()}";
+                if (nameCurrentFile == "k" || nameCurrentFile == "K")
+                {
+                    СreatureDirectory(name);
+                }
+                if (nameCurrentFile == "f" || nameCurrentFile == "F")
+                {
+                    СreatureFile(name);
+                }
+                else
+                {
+                    Console.WriteLine("Не верно введена команда.");
+                }
+
+            }
+            else
+            {
+                Console.WriteLine("Каталог не найден");
+            }
+        }
+        static void СreatureDirectory(string name) //Создание каталога 
+        {
+
+            Console.WriteLine("Как называется каталог? ");
+            string nameCurrentFile = @$"{Console.ReadLine()}";
+            string newPathDirectory = ($"{name}\\{nameCurrentFile}");
+
+            DirectoryInfo directory = new DirectoryInfo(newPathDirectory);
+            if (directory.Exists)
+            {
+                Console.WriteLine("Такой каталог существует.");
+                return;
+            }
+            else
+            {
+                try
+                {
+                    directory.Create();
+                    Console.WriteLine($"Каталог создан.{directory}");
+                    return;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+
+
+
+        }
+        static void СreatureFile(string name) //Создание файла 
+        {
+
+            Console.WriteLine("Как называется файл? Файл необходимо написать с расширением.");
+            string nameCurrentFile = @$"{Console.ReadLine()}";
+            string newPathDirectory = ($"{name}\\{nameCurrentFile}");
+            if (File.Exists(newPathDirectory))
+            {
+                Console.WriteLine("Такой файл существует.");
+                return;
+            }
+            else
+            {
+                try
+                {
+                    File.Create(newPathDirectory);
+                    Console.WriteLine($"Файл создан.{newPathDirectory}");
+                    return;
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+            }
+
+        }
+
         public static void Exit(string path, Settings config) //Завершение программы
         {
             string toFile = JsonConvert.SerializeObject(config);
