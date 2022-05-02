@@ -22,6 +22,18 @@
 
 :white_check_mark:	- Пункт 11. Реализовать движение по истории команд (стрелочки вверх, вниз);
 
+:white_check_mark:	- Пункт 12. Создание файлов и каталогов;
+
+:white_check_mark:	- Пункт 13. Переименование файлов и каталогов;
+
+:white_check_mark:	- Пункт 14. Осущестывление поиска файлов и каталогов;
+
+:white_check_mark:	- Пункт 15. Для текстовых файлов просмотр статических данных;
+
+:white_check_mark:	- Пункт 16. Предусмотрена возможность изменения атрибутов файлов;
+
+
+
 ### Пункт 1.
    **Просмотр файловой структуры.**
    
@@ -84,6 +96,49 @@
     
    Приняты меры от ощибочного ввода при вызове команд и написанию пути к файлу или каталогу. 
     
+  ### Пункт 12.  
+  **Создание файлов и каталогов.**
   
+  Основано на методе Creation включающее в себя два метода: СreationDirectory и СreationFile.
+  
+![2022-05-02_22-25-54](https://user-images.githubusercontent.com/97848897/166312349-19a1fd55-7b73-4eb3-bff5-3615b8059f66.png)
+![2022-05-02_22-26-04](https://user-images.githubusercontent.com/97848897/166312352-818e26b0-7bd7-4edf-b4c2-184064bb1d41.png)
+![2022-05-02_22-26-12](https://user-images.githubusercontent.com/97848897/166312359-f366fdc9-bdf3-4f8d-983e-deb1d12417a7.png)
+
+  ### Пункт 13.  
+  **Переименование файлов и каталогов.**
+  
+  Основано на методе Rename.
+  ![2022-05-02_22-29-01](https://user-images.githubusercontent.com/97848897/166312681-3c7788a3-f426-46fd-baff-dc90877b4abd.png)
+
+  ### Пункт 14.  
+  **Осущестывление поиска файлов и каталогов.**
+
+  Основано на методе Search.
+ ![2022-05-02_22-30-23](https://user-images.githubusercontent.com/97848897/166312936-7e26b4b1-57de-4a2f-a0d7-285d5591d085.png)
+
+  ### Пункт 15.  
+  **Для текстовых файлов просмотр статических данных.**
+ 
+Основано на пяти методах NumberWordsWhitespace,  NumberLines, NumberpParagraphs, NumberpCharSpaces, NumberpChar.
+Вызываются при просмотре информации текстовых файлов.
+
+![2022-05-02_22-34-50](https://user-images.githubusercontent.com/97848897/166313719-68a304b8-c607-4cd1-b918-aa3d27ae4087.png)
+
+![2022-05-02_22-34-58](https://user-images.githubusercontent.com/97848897/166313684-872a0d0d-bc4a-4f10-a3a7-619627098e29.png)
+
+![2022-05-02_22-35-32](https://user-images.githubusercontent.com/97848897/166313647-2472de30-cd80-47bd-affb-edb78bca232d.png)
+
+![2022-05-02_22-35-40](https://user-images.githubusercontent.com/97848897/166313629-53207e23-b3cf-4fa6-93b1-af70d00d7876.png)
+
+![2022-05-02_22-35-53](https://user-images.githubusercontent.com/97848897/166313603-b6e5175d-94a3-419d-bc20-84267899ff25.png)
+
+ ### Пункт 16.  
+  **Предусмотрена возможность изменения атрибутов файлов.**
+
+Основано на методе AttributeChanges.
+
+![2022-05-02_22-38-35](https://user-images.githubusercontent.com/97848897/166313958-a94a28b4-8f41-4f18-bac4-61874c567d64.png)
+
     
     
