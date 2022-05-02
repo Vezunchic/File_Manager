@@ -24,8 +24,19 @@ namespace File_Manager
                         {
                             Console.WriteLine($" help или h - помощь; \n del или d - удаление файла или каталога; \n copy или c - копирование файла или каталога;" +
                                 $" \n info или i - информация о файле или каталоге; \n exit или ex - завершить программу; \n return или re - возврат к текущей рабочему каталогу;" +
-                                $"\n search или s - поиск каталога или файла;\n enter или e - переход по заданному пути;\n rename или r -переименование файла или каталога;");
+                                $"\n search или s - поиск каталога или файла;\n enter или e - переход по заданному пути;\n rename или r - переименование файла или каталога; \n Atributtes или A - изменение атрибутов файла");
                             Console.WriteLine();
+                        }
+                        continue;
+                    case "a":
+                    case "atributtes":
+                        {
+                            Console.WriteLine("В каком файле хотите изменить атрибуты. Название файла вводить с расширением.");
+                            string nameFile = @$"{Console.ReadLine()}";
+                            FileInformation.AttributeChanges(nameFile);
+                            
+                            Console.WriteLine("\n -----------------------");
+
                         }
                         continue;
                     case "r":
